@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnterMedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Alert Box -->
+    <div class="alert-box" id="alertBox">
+        <p>Users must comply with the laws. Do not upload pirated movie clips, show gore, pornography, harassment, nudity, child pornography, or post images or videos of a dead body of a minor or a person.</p>
+        <button onclick="closeAlert()">Close</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>EnterMedia</h1>
+    </header>
+
+    <!-- Search Bar -->
+    <aside>
+        <input type="text" placeholder="Search..." id="searchBar">
+    </aside>
+
+    <!-- Upload Button -->
+    <div class="upload-section">
+        <button id="uploadBtn">Upload</button>
+    </div>
+
+    <!-- Video Upload Form -->
+    <div class="upload-form" id="uploadForm">
+        <h2>Upload Video</h2>
+        <form id="videoUploadForm">
+            <label for="videoTitle">Title:</label>
+            <input type="text" id="videoTitle" name="videoTitle" required><br><br>
+            <label for="videoDesc">Description (Optional):</label>
+            <textarea id="videoDesc" name="videoDesc"></textarea><br><br>
+            <label for="videoFile">Select Video:</label>
+            <input type="file" id="videoFile" name="videoFile" accept="video/*" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Home Page -->
+    <main id="homePage">
+        <h2>Home Page</h2>
+        <div id="videoList">
+            <!-- Uploaded videos will appear here -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
